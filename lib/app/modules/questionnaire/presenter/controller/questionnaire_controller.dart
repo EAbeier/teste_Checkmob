@@ -13,11 +13,7 @@ class QuestionnaireController extends ChangeNotifier {
   }
 
   Future<void> getQuestionnaires() async {
-    if (isRemote) {
-      questionnaires = await repository.getAllQuestionnairesJson();
-    } else {
-      questionnaires = await repository.getAllQuestionnaires();
-    }
+    questionnaires = await repository.getAllQuestionnaires();
     notifyListeners();
   }
 }

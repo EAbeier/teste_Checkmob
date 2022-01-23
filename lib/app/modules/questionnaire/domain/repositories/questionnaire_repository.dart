@@ -14,7 +14,6 @@ class QuestionnaireRepository implements IQuestionnaireRepository {
   @override
   Future<List<QuestionnaireEntity>> getAllQuestionnairesJson() async {
     var response = await datasource.getAllQuestionnaires();
-    print(response);
     _questionnaires.add(QuestionnaireEntity.fromJson(response));
     return _questionnaires;
   }
