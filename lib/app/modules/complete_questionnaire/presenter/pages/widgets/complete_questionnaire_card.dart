@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/complete_questionnaire_entitie.dart';
+import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/complete_questionnaire_entity.dart';
 
 class CompleteQuestionnaireCard extends StatelessWidget {
   final int index;
@@ -11,7 +11,7 @@ class CompleteQuestionnaireCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final content = ModalRoute.of(context)!.settings.arguments
-        as CompleteQuestionnaireEntitie;
+        as CompleteQuestionnaireEntity;
     return Card(
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
@@ -25,7 +25,7 @@ class CompleteQuestionnaireCard extends StatelessWidget {
               height: 10,
             ),
             Text(
-              content.questoes[index].descricao,
+              content.questions[index].description,
               style: Theme.of(context).textTheme.subtitle1,
             ),
             const SizedBox(
@@ -37,7 +37,7 @@ class CompleteQuestionnaireCard extends StatelessWidget {
               height: 10,
             ),
             Text(
-              content.questoes[index].resposta,
+              content.questions[index].resposta,
               style: Theme.of(context).textTheme.headline2,
             ),
           ],

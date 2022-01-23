@@ -1,10 +1,8 @@
 import 'package:avaliacao_checkmob/app/core/tab/stores/tab_store.dart';
 import 'package:avaliacao_checkmob/app/core/theme/stores/theme_store.dart';
 import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/presenter/pages/complete_questionnaire.dart';
-import 'package:avaliacao_checkmob/app/modules/historic/domain/entities/historic_entitie.dart';
-import 'package:avaliacao_checkmob/app/modules/historic/presenter/pages/historic.dart';
-import 'package:avaliacao_checkmob/app/modules/questionnaire/domain/controller/questionnaire_controller.dart';
-import 'package:avaliacao_checkmob/app/modules/questionnaire_form/domain/controller/questionnaire_form_controller.dart';
+import 'package:avaliacao_checkmob/app/modules/historic/presenter/controller/historic_controller.dart';
+import 'package:avaliacao_checkmob/app/modules/questionnaire/presenter/controller/questionnaire_controller.dart';
 import 'package:avaliacao_checkmob/app/utils/routes/main_routes.dart';
 import 'package:avaliacao_checkmob/app/utils/themes/app_themes.dart';
 import 'package:avaliacao_checkmob/app/app_widget.dart';

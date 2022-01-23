@@ -1,5 +1,5 @@
 import 'package:avaliacao_checkmob/app/core/shared/widgets/app_bar/custom_appbar.dart';
-import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/complete_questionnaire_entitie.dart';
+import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/complete_questionnaire_entity.dart';
 import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/presenter/pages/widgets/complete_questionnaire_card.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +9,7 @@ class CompleteQuestionnaire extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final content = ModalRoute.of(context)!.settings.arguments
-        as CompleteQuestionnaireEntitie;
+        as CompleteQuestionnaireEntity;
     return Scaffold(
       appBar: CustomAppBar(title: content.title, canGoBack: true),
       body: ListView.builder(

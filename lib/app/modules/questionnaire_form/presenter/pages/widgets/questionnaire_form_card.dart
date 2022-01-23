@@ -1,8 +1,8 @@
-import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/question/answred_question.dart';
+import 'package:avaliacao_checkmob/app/modules/complete_questionnaire/domain/entities/question/answred_question_entity.dart';
 import 'package:flutter/material.dart';
 
 import 'package:avaliacao_checkmob/app/modules/questionnaire/domain/entities/question/question.dart';
-import 'package:avaliacao_checkmob/app/modules/questionnaire_form/domain/controller/questionnaire_form_controller.dart';
+import 'package:avaliacao_checkmob/app/modules/questionnaire_form/presenter/controller/questionnaire_form_controller.dart';
 
 class QuestionnaireFormCard extends StatelessWidget {
   final Question content;
@@ -40,7 +40,7 @@ class QuestionnaireFormCard extends StatelessWidget {
               height: 10,
             ),
             Text(
-              content.descricao,
+              content.description,
               style: Theme.of(context).textTheme.bodyText1,
             ),
             const SizedBox(
@@ -48,10 +48,10 @@ class QuestionnaireFormCard extends StatelessWidget {
             ),
             TextField(
               onChanged: (value) {
-                final answer = AnswredQuestion(
+                final answer = AnswredQuestionEntity(
                   id: content.id,
                   title: content.title,
-                  descricao: content.descricao,
+                  description: content.description,
                   resposta: value,
                 );
                 controller.addAnswer(answer);

@@ -1,22 +1,22 @@
-class AnswredQuestion {
+class AnswredQuestionEntity {
   final int id;
   final String title;
-  final String descricao;
+  final String description;
   final String resposta;
-  AnswredQuestion({
+  AnswredQuestionEntity({
     required this.id,
     required this.title,
-    required this.descricao,
+    required this.description,
     required this.resposta,
   });
 
-  AnswredQuestion copyWith({
+  AnswredQuestionEntity copyWith({
     String? resposta,
   }) {
-    return AnswredQuestion(
+    return AnswredQuestionEntity(
       id: id,
       title: title,
-      descricao: descricao,
+      description: description,
       resposta: resposta ?? this.resposta,
     );
   }

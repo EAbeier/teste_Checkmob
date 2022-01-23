@@ -1,4 +1,4 @@
-import 'package:avaliacao_checkmob/app/modules/historic/domain/entities/historic_entitie.dart';
+import 'package:avaliacao_checkmob/app/modules/historic/presenter/controller/historic_controller.dart';
 import 'package:avaliacao_checkmob/app/modules/historic/presenter/pages/widgets/historic_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

@@ -1,10 +1,9 @@
+import 'package:avaliacao_checkmob/app/modules/questionnaire/domain/entities/questionnaire_entity.dart';
 import 'package:avaliacao_checkmob/app/utils/routes/main_routes.dart';
 import 'package:flutter/material.dart';
 
-import 'package:avaliacao_checkmob/app/modules/questionnaire/domain/entities/questionnaire_entitie.dart';
-
 class QuestionnaireCustomCard extends StatelessWidget {
-  final QuestionnaireEntitie content;
+  final QuestionnaireEntity content;
   final int index;
 
   const QuestionnaireCustomCard({
